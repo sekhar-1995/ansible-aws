@@ -92,7 +92,6 @@
          Name: vprofile-privsub3
       register: privsub3_out
 
-<<<<<<< HEAD
     - name: Internet Gateway Setup
       ec2_vpc_igw:
         vpc_id: "{{vpcout.vpc.id}}"
@@ -117,13 +116,3 @@
            gateway_id: "{{igw_out.gateway_id}}"
       register: pubRT_out
 
-
-
-
-
-
-
-
-     
-=======
->>>>>>> origin/master
