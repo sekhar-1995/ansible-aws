@@ -1,0 +1,6 @@
+#---
+#- name: Setup Vprofile Bastion Host
+ # hosts: localhost
+  #connectin: local
+  #gather_facts: no
+
