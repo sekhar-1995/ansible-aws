@@ -35,9 +35,9 @@
             from_port: 22
             to_port: 22
             cidr_ip: "{{MYIP}}"
-        register: BastionSG_out
+     register: BastionSG_out
    
-    - Creating bastion host
+   - name: Creating bastion host
       ec2:
        key_name: vprofile-key 
        region: "{{region}}"
@@ -55,7 +55,9 @@
           Project: Vprofile
           Owner: DevOps Team
        group_id: "{{BastionSG_out.group_id}}"
-       register: bastionHost_out
+       vpc_subnet_id: "{{pubsub1id}}"
+
+      register: bastionHost_out
 
 
 
