@@ -1,4 +1,3 @@
-region: us-east-1
 vpc_id: vpc-0660600ee6afb2e01
 pubsub1id: subnet-02dff56dcba7c11b8
 pubsub2id: subnet-053499ad1fed172e5
