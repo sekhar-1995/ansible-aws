@@ -55,6 +55,8 @@
           group_id: "{{BastionSGid}}"
        register: vprostackSG_out
 
+
+ 
     - name: Update Security Group with its own sg id
       ec2_group: 
        name: vproStack-sg
