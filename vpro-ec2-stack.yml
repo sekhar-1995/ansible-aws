@@ -130,7 +130,7 @@
         Owner: DevOps Team
        group_id: "{{vproStackSG_out.group_id}}"
        vpc_subnet_id: "{{privsub1id}}"
-      register: mc0_out
+      register: mc01_out
 
     - name: Creating RabbitMQ rmq01
       ec2:
