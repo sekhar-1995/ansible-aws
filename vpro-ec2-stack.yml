@@ -130,7 +130,7 @@
         Owner: DevOps Team
        group_id: "{{vproStackSG_out.group_id}}"
        vpc_subnet_id: "{{privsub1id}}"
-      register: mc0_out
+      register: mc01_out
 
     - name: Creating RabbitMQ rmq01
       ec2:
@@ -179,17 +179,18 @@
     
     - local_action: #here we are storing information in a file module called "local_action"
         module: ec2_elb_lb
-        name: "Vprofile-elb"
+        name: "vprofile-elb"
         region: "{{region}}"
         state: present
         instance_ids: 
           - "{{web01_out.tagged_instances[0].id}}"
-        purge_instance_ids: "{{vproELBSG_out.group.id}}"
+        purge_instance_ids: true
+        security_group_ids: "{{vproELBSG_out.group_id}}"
         subnets:
           - "{{pubsub1id}}"
           - "{{pubsub2id}}"
           - "{{pubsub3id}}"
-        listners: 
+        listeners: 
           - protocol: http #options are http,https,ssl,tcp
             load_balancer_port: 80
             instance_port: 80
@@ -204,11 +205,11 @@
           mc01_ip: "{{mc01_out.tagged_instances[0].private_ip}}" 
           db01_ip: "{{db01_out.tagged_instances[0].private_ip}}"
 
-    - name: Copy login key to provision_stack directory
+    - name: Copy login key to provision-stack directory
       copy: 
          src: loginkey_vpro.pem
          dest: provision-stack/loginkey_vpro.pem
-         mode: '0400'
+         mode: '0600'
     
     - name: Insert/Update Inventory file provision-stack/inventory-vpro
       blockinfile: 
