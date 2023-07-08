@@ -179,7 +179,7 @@
     
     - local_action: #here we are storing information in a file module called "local_action"
         module: ec2_elb_lb
-        name: "{{vprofile-elb}}"
+        name: "Vprofile-elb"
         region: "{{region}}"
         state: present
         instance_ids: 
