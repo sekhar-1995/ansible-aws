@@ -22,10 +22,10 @@
 
    - name: mvn install command to build artifact
      command: "mvn install"
-      args: 
+     args: 
        chdir: Vprofile-repo
-      when: git_status.changed
-      register: mvn_info
+     when: git_status.changed
+     register: mvn_info
 
    - name: Copy artifact to files directory
      copy: 
@@ -35,6 +35,6 @@
    
    - name: Copy SQL file to files directory
      copy:
-      src: Vprofile-repo/src/main/resources/db_backup,sql
+      src: Vprofile-repo/src/main/resources/db_backup.sql
       dest: files/db_backup.sql
  

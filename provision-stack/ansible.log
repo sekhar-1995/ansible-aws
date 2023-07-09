@@ -1,0 +1,185 @@
+2023-07-09 11:51:02,235 p=77329 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 11:51:02,236 p=77329 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 11:51:02,236 p=77329 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 11:51:02,236 p=77329 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 11:51:02,237 p=77329 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 11:51:02,427 p=77329 u=root n=ansible | ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/root/ansible-aws/provision-stack/build.yml': line 25, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     command: "mvn install"
+      args:
+      ^ here
+
+2023-07-09 11:52:11,127 p=77338 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 11:52:11,128 p=77338 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 11:52:11,128 p=77338 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 11:52:11,129 p=77338 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 11:52:11,129 p=77338 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 11:52:11,314 p=77338 u=root n=ansible | ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/root/ansible-aws/provision-stack/build.yml': line 25, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     command: "mvn clean install"
+      args:
+      ^ here
+
+2023-07-09 11:53:08,184 p=77344 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 11:53:08,185 p=77344 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 11:53:08,185 p=77344 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 11:53:08,185 p=77344 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 11:53:08,186 p=77344 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 11:53:08,373 p=77344 u=root n=ansible | ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/root/ansible-aws/provision-stack/build.yml': line 27, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+       chdir: Vprofile-repo
+      when: git_status.changed
+      ^ here
+
+2023-07-09 11:54:16,512 p=77349 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 11:54:16,515 p=77349 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 11:54:16,515 p=77349 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 11:54:16,515 p=77349 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 11:54:16,516 p=77349 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 11:54:16,901 p=77349 u=root n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ****************************************************************************************************************************
+2023-07-09 11:54:16,921 p=77349 u=root n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************
+2023-07-09 11:54:18,375 p=77349 u=root n=ansible | ok: [localhost]
+2023-07-09 11:54:18,385 p=77349 u=root n=ansible | TASK [install jdk,mvn,git] ***********************************************************************************************************************************************************************
+2023-07-09 11:54:25,636 p=77349 u=root n=ansible | ok: [localhost] => (item=git)
+2023-07-09 11:55:11,623 p=77349 u=root n=ansible | changed: [localhost] => (item=openjdk-11-jdk)
+2023-07-09 11:55:21,242 p=77349 u=root n=ansible | changed: [localhost] => (item=maven)
+2023-07-09 11:55:21,261 p=77349 u=root n=ansible | TASK [Clone sourcecode from github] **************************************************************************************************************************************************************
+2023-07-09 11:55:23,750 p=77349 u=root n=ansible | changed: [localhost]
+2023-07-09 11:55:23,760 p=77349 u=root n=ansible | TASK [mvn install command to build artifact] *****************************************************************************************************************************************************
+2023-07-09 11:56:08,888 p=77349 u=root n=ansible | changed: [localhost]
+2023-07-09 11:56:08,910 p=77349 u=root n=ansible | TASK [Copy artifact to files directory] **********************************************************************************************************************************************************
+2023-07-09 11:56:10,434 p=77349 u=root n=ansible | failed: [localhost] (item=/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "1c3bb4b56042f0ffa64b8141853a42a1b28f38b7", "item": "/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-07-09 11:56:10,441 p=77349 u=root n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************
+2023-07-09 11:56:10,442 p=77349 u=root n=ansible | localhost                  : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-07-09 18:33:41,842 p=84075 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 18:33:41,843 p=84075 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 18:33:41,843 p=84075 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 18:33:41,843 p=84075 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 18:33:41,844 p=84075 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 18:33:42,747 p=84075 u=root n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ****************************************************************************************************************************
+2023-07-09 18:33:42,787 p=84075 u=root n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************
+2023-07-09 18:33:44,132 p=84075 u=root n=ansible | ok: [localhost]
+2023-07-09 18:33:44,140 p=84075 u=root n=ansible | TASK [install jdk,mvn,git] ***********************************************************************************************************************************************************************
+2023-07-09 18:33:52,827 p=84075 u=root n=ansible | ok: [localhost] => (item=git)
+2023-07-09 18:33:55,693 p=84075 u=root n=ansible | ok: [localhost] => (item=openjdk-11-jdk)
+2023-07-09 18:33:58,283 p=84075 u=root n=ansible | ok: [localhost] => (item=maven)
+2023-07-09 18:33:58,294 p=84075 u=root n=ansible | TASK [Clone sourcecode from github] **************************************************************************************************************************************************************
+2023-07-09 18:33:59,415 p=84075 u=root n=ansible | ok: [localhost]
+2023-07-09 18:33:59,438 p=84075 u=root n=ansible | TASK [mvn install command to build artifact] *****************************************************************************************************************************************************
+2023-07-09 18:33:59,493 p=84075 u=root n=ansible | skipping: [localhost]
+2023-07-09 18:33:59,506 p=84075 u=root n=ansible | TASK [Copy artifact to files directory] **********************************************************************************************************************************************************
+2023-07-09 18:34:00,799 p=84075 u=root n=ansible | failed: [localhost] (item=/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war) => {"ansible_loop_var": "item", "changed": false, "checksum": "1c3bb4b56042f0ffa64b8141853a42a1b28f38b7", "item": "/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war", "msg": "Destination directory files does not exist"}
+2023-07-09 18:34:00,804 p=84075 u=root n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************
+2023-07-09 18:34:00,805 p=84075 u=root n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-07-09 18:44:41,728 p=85485 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 18:44:41,729 p=85485 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 18:44:41,729 p=85485 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 18:44:41,729 p=85485 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 18:44:41,730 p=85485 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 18:44:42,269 p=85485 u=root n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ****************************************************************************************************************************
+2023-07-09 18:44:42,304 p=85485 u=root n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************
+2023-07-09 18:44:43,555 p=85485 u=root n=ansible | ok: [localhost]
+2023-07-09 18:44:43,566 p=85485 u=root n=ansible | TASK [install jdk,mvn,git] ***********************************************************************************************************************************************************************
+2023-07-09 18:44:46,565 p=85485 u=root n=ansible | ok: [localhost] => (item=git)
+2023-07-09 18:44:49,142 p=85485 u=root n=ansible | ok: [localhost] => (item=openjdk-11-jdk)
+2023-07-09 18:44:51,733 p=85485 u=root n=ansible | ok: [localhost] => (item=maven)
+2023-07-09 18:44:51,744 p=85485 u=root n=ansible | TASK [Clone sourcecode from github] **************************************************************************************************************************************************************
+2023-07-09 18:44:52,382 p=85485 u=root n=ansible | ok: [localhost]
+2023-07-09 18:44:52,392 p=85485 u=root n=ansible | TASK [mvn install command to build artifact] *****************************************************************************************************************************************************
+2023-07-09 18:44:52,449 p=85485 u=root n=ansible | skipping: [localhost]
+2023-07-09 18:44:52,460 p=85485 u=root n=ansible | TASK [Copy artifact to files directory] **********************************************************************************************************************************************************
+2023-07-09 18:44:53,500 p=85485 u=root n=ansible | changed: [localhost] => (item=/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war)
+2023-07-09 18:44:53,510 p=85485 u=root n=ansible | TASK [Copy SQL file to files directory] **********************************************************************************************************************************************************
+2023-07-09 18:44:53,559 p=85485 u=root n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-07-09 18:44:53,560 p=85485 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access 'Vprofile-repo/src/main/resources/db_backup,sql'\nSearched in:\n\t/root/ansible-aws/provision-stack/files/Vprofile-repo/src/main/resources/db_backup,sql\n\t/root/ansible-aws/provision-stack/Vprofile-repo/src/main/resources/db_backup,sql\n\t/root/ansible-aws/provision-stack/files/Vprofile-repo/src/main/resources/db_backup,sql\n\t/root/ansible-aws/provision-stack/Vprofile-repo/src/main/resources/db_backup,sql on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-07-09 18:44:53,562 p=85485 u=root n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************
+2023-07-09 18:44:53,563 p=85485 u=root n=ansible | localhost                  : ok=4    changed=1    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-07-09 18:54:31,473 p=86878 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with yaml plugin: YAML inventory has invalid structure, it should be a dictionary, got: <class
+'ansible.parsing.yaml.objects.AnsibleUnicode'>
+
+2023-07-09 18:54:31,473 p=86878 u=root n=ansible | [WARNING]:  * Failed to parse /root/ansible-aws/provision-stack/inventory-vpro with ini plugin: /root/ansible-aws/provision-stack/inventory-vpro:2: Expected key=value host variable assignment,
+got: app01
+
+2023-07-09 18:54:31,474 p=86878 u=root n=ansible | [WARNING]: Unable to parse /root/ansible-aws/provision-stack/inventory-vpro as an inventory source
+
+2023-07-09 18:54:31,474 p=86878 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-07-09 18:54:31,474 p=86878 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-07-09 18:54:31,796 p=86878 u=root n=ansible | PLAY [Generate artifact, copy artifact & sql file to files directory] ****************************************************************************************************************************
+2023-07-09 18:54:31,810 p=86878 u=root n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************************************
+2023-07-09 18:54:32,943 p=86878 u=root n=ansible | ok: [localhost]
+2023-07-09 18:54:32,954 p=86878 u=root n=ansible | TASK [install jdk,mvn,git] ***********************************************************************************************************************************************************************
+2023-07-09 18:54:35,803 p=86878 u=root n=ansible | ok: [localhost] => (item=git)
+2023-07-09 18:54:38,377 p=86878 u=root n=ansible | ok: [localhost] => (item=openjdk-11-jdk)
+2023-07-09 18:54:40,980 p=86878 u=root n=ansible | ok: [localhost] => (item=maven)
+2023-07-09 18:54:40,991 p=86878 u=root n=ansible | TASK [Clone sourcecode from github] **************************************************************************************************************************************************************
+2023-07-09 18:54:41,630 p=86878 u=root n=ansible | ok: [localhost]
+2023-07-09 18:54:41,640 p=86878 u=root n=ansible | TASK [mvn install command to build artifact] *****************************************************************************************************************************************************
+2023-07-09 18:54:41,696 p=86878 u=root n=ansible | skipping: [localhost]
+2023-07-09 18:54:41,707 p=86878 u=root n=ansible | TASK [Copy artifact to files directory] **********************************************************************************************************************************************************
+2023-07-09 18:54:42,609 p=86878 u=root n=ansible | ok: [localhost] => (item=/root/ansible-aws/provision-stack/Vprofile-repo/target/vprofile-v2.war)
+2023-07-09 18:54:42,618 p=86878 u=root n=ansible | TASK [Copy SQL file to files directory] **********************************************************************************************************************************************************
+2023-07-09 18:54:43,183 p=86878 u=root n=ansible | changed: [localhost]
+2023-07-09 18:54:43,187 p=86878 u=root n=ansible | PLAY RECAP ***************************************************************************************************************************************************************************************
+2023-07-09 18:54:43,187 p=86878 u=root n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
