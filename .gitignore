@@ -1,2 +1,4 @@
 *.pem
 bastion_key.pem
+*.sql
+*.war

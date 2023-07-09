@@ -7,7 +7,7 @@
     - name: Update hosts file for all the hosts
       blockinfile: 
         path: /etc/hosts
-        block: 
+        block: |
           {{web01_ip}} web01
           {{app01_ip}} app01
           {{rmq01_ip}} rmq01
