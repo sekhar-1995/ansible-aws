@@ -1,0 +1,27 @@
+---
+- name: Install & Setup RabbtMQ with user
+  hosts: rmqsrvgrp
+  gather_facts: no
+  tasks:
+   - name: Install Erlang Repository Package
+     apt: 
+      deb: https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
+     tags:
+      - package
+   
+   - name: Add an erlang solution public key
+     apt_key: 
+      url: https://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc
+      state: present
+     tags: 
+      - package
+      
+   - name: Install Erlang
+     apt:
+      name: erlang
+      update_cache: yes
+      cache_valid_time: 86400
+      state: present
+  
+   
+   
